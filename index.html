@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ticket Booking System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>🎟 Ticket Booking</h1>
+
+    <label>Name</label>
+    <input type="text" id="name" placeholder="Enter your name">
+
+    <label>Event</label>
+    <select id="event">
+      <option value="Movie">Movie</option>
+      <option value="Concert">Concert</option>
+      <option value="Bus">Bus Ticket</option>
+    </select>
+
+    <label>No. of Tickets</label>
+    <input type="number" id="tickets" value="1" min="1">
+
+    <button onclick="bookTicket()">Book Ticket</button>
+
+    <p id="result"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
